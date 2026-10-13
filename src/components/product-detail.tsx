@@ -29,7 +29,7 @@ export function ProductDetail({ product: p, delivery = settings.delivery }: { pr
   return <section className="product-detail section">
     <div className="product-gallery">
       <div className="main-product-image" style={{ background: p.colour }}>
-        <Image src={photo === 0 ? p.image : p.closeup} alt={photo === 0 ? `${p.name}${p.verified ? '' : ' concept'} packaging` : `${p.name}${p.verified ? '' : ' concept'} popcorn close-up`} width={900} height={900} priority sizes="(max-width: 768px) 100vw, 55vw" />
+        <Image src={photo === 0 ? p.image : p.closeup} alt={photo === 0 ? `${p.name}${p.verified ? '' : ' concept'} packaging` : `${p.name}${p.verified ? '' : ' concept'} popcorn close-up`} width={900} height={900} priority fetchPriority="high" sizes="(max-width: 768px) calc(100vw - 40px), 55vw" />
         {!p.verified && <span className="concept-chip">CONCEPT VISUALISATION</span>}
       </div>
       <div className="gallery-thumbs"><button className={photo === 0 ? 'selected' : ''} onClick={() => setPhoto(0)} aria-label="View packaging" aria-pressed={photo === 0}><Image src={p.image} width={90} height={90} alt="Packaging" /></button><button className={photo === 1 ? 'selected' : ''} onClick={() => setPhoto(1)} aria-label="View popcorn detail" aria-pressed={photo === 1}><Image src={p.closeup} width={90} height={90} alt="Popcorn detail" /></button><p>A little closer.<br />A lot more delicious.</p></div>

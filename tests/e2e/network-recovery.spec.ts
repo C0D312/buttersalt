@@ -39,3 +39,35 @@ test('live-mode transport failures preserve the visible cart and retry an absolu
   await expect(page.locator('main .quantity span')).toHaveText('2');
   await expect(page).toHaveURL(/\/cart$/);
 });
+
+test('live cart quantity controls honour provider minimum and increments', async ({ page }) => {
+  const initial = {
+    id: 'quantity-rule-line', variantId: 'gid://shopify/ProductVariant/123', productSlug: 'salted-caramel', title: 'Salted Caramel',
+    variantTitle: 'Provider quantity-rule fixture', quantity: 3, price: 11, total: 33, quantityLimit: 9, minimum: 3, increment: 3,
+    image: '/images/salted-caramel-bag.webp', available: true, attributes: [],
+  };
+  let line = initial;
+  const submitted: number[] = [];
+  const publicCart = () => ({ lines: [line], subtotal: line.total, total: line.total, currencyCode: 'AUD', totalQuantity: line.quantity, discounts: [], warnings: [], taxEstimated: true, shippingEstimated: true });
+  await page.route('**/api/cart', async (route) => {
+    if (route.request().method() === 'POST') {
+      const input = route.request().postDataJSON();
+      submitted.push(input.quantity);
+      line = { ...line, quantity: input.quantity, total: input.quantity * 11 };
+    }
+    return route.fulfill({ json: { mode: 'live', cart: publicCart() } });
+  });
+  await page.goto('/cart');
+  const decrease = page.getByRole('button', { name: 'Decrease Salted Caramel quantity' });
+  const increase = page.getByRole('button', { name: 'Increase Salted Caramel quantity' });
+  await expect(page.locator('main .quantity span')).toHaveText('3');
+  await expect(decrease).toBeDisabled();
+  await increase.click();
+  await expect(page.locator('main .quantity span')).toHaveText('6');
+  await increase.click();
+  await expect(page.locator('main .quantity span')).toHaveText('9');
+  await expect(increase).toBeDisabled();
+  await decrease.click();
+  await expect(page.locator('main .quantity span')).toHaveText('6');
+  expect(submitted).toEqual([6, 9, 6]);
+});

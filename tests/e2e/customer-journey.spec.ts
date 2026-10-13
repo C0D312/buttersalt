@@ -132,16 +132,12 @@ test('variant limits count quantities in every mixed-box group', async ({ page }
     await page.getByRole('button', { name: 'Add mixed box to bag' }).click();
     await page.getByRole('button', { name: 'Close bag' }).click();
   }
-  await page.getByRole('button', { name: 'Add mixed box to bag' }).click();
-  const drawer = page.getByRole('dialog', { name: 'Your bag' });
-  await expect(drawer.getByRole('alert')).toContainText('exceeds the available quantity');
-  await expect(drawer.locator('.bag-line')).toHaveCount(2);
+  await expect(page.getByRole('button', { name: 'Add mixed box to bag' })).toBeDisabled();
   await expect(page.getByRole('button', { name: 'Open bag, 12 items' })).toBeVisible();
-  await page.getByRole('button', { name: 'Close bag' }).click();
   await page.goto('/cart');
   await page.reload();
-  await page.getByRole('button', { name: 'Increase Salted Caramel quantity', exact: true }).first().click();
-  await expect(page.locator('main [role="alert"]')).toContainText('limit across your basket');
+  await expect(page.locator('main .bag-line')).toHaveCount(2);
+  await expect(page.getByRole('button', { name: 'Increase Salted Caramel quantity', exact: true }).first()).toBeDisabled();
   await expect(page.locator('main .quantity span')).toHaveText(['6', '6']);
   await expect(page.getByRole('button', { name: 'Open bag, 12 items' })).toBeVisible();
 });

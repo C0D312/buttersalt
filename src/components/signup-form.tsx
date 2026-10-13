@@ -23,6 +23,7 @@ export function SignupForm() {
     setStatus('');
     setSuccess(false);
     try {
+      if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') throw new Error('Newsletter signup is not connected in this private preview. Your signup has not been sent.');
       const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...payload, submissionId: submission.current.id }) });
       let data;
       try { data = await response.json(); } catch { throw new Error('Newsletter signup is not connected in this private preview. Your signup has not been sent.'); }

@@ -2,6 +2,8 @@
 
 A complete contemporary popcorn brand and custom Next.js storefront, built for Australian English and AUD. The checked-in range is a private development catalogue: eight flavour concepts, discovery/mixed/gift boxes, original editable branding, generated concept photography and illustrative prices. The preview accepts no payments and creates no orders.
 
+Source repository: [C0D312/buttersalt](https://github.com/C0D312/buttersalt) (private).
+
 ## Start locally
 
 Use Node.js 22 LTS or a compatible newer supported release, and npm. Install the exact dependency tree from the lockfile:
@@ -28,7 +30,7 @@ npm run build:preview
 npm run serve:preview
 ```
 
-Open http://127.0.0.1:3000. This separate export is for visual and development-basket review on Sites or another static host. It has no backend. The build temporarily isolates API routes and old Next generated types, forces development mode and restores source/previous Next build in finally. Browser fixture baskets persist locally; discounts, checkout, orders, customer authentication and form delivery remain unavailable. The local preview server gives explicit JSON development responses and applies security/noindex headers. Set PORT to use another local port.
+Open http://127.0.0.1:3000. This separate export is for visual and development-basket review on Sites or another static host. It has no backend. The build temporarily isolates API routes and old Next generated types, forces development mode and restores source/previous Next build in finally. It embeds NEXT_PUBLIC_STATIC_PREVIEW=true so the basket and forms do not depend on API responses from a static host. Browser fixture baskets persist locally; discounts, checkout, orders, customer authentication and form delivery remain unavailable. The local preview server gives explicit JSON development responses and applies security/noindex headers. Set PORT to use another local port.
 
 Static hosting must apply its own access control and response headers; the local preview server is not deployed by copying out/. Noindex is an indexing control, not password protection. Use the intended private Sites visibility or hosting provider authentication. [Deployment instructions](docs/DEPLOYMENT.md) explain both deployment targets and recovery.
 

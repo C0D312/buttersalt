@@ -196,6 +196,7 @@ export function publicCart(cart: RawCart, warnings: string[] = []): PublicCart {
       id: line.id, variantId: line.merchandise.id, productSlug: line.merchandise.product.handle, title: line.merchandise.product.title,
       variantTitle: line.merchandise.title, quantity: line.quantity, price: amount(line.cost.amountPerQuantity.amount), total: amount(line.cost.totalAmount.amount),
       available: limit(line.merchandise) > 0, quantityLimit: limit(line.merchandise), image: line.merchandise.image?.url ?? line.merchandise.product.featuredImage?.url ?? null,
+      minimum: line.merchandise.quantityRule.minimum, increment: line.merchandise.quantityRule.increment,
       attributes: line.attributes.filter((attribute) => attribute.key === '_box_group' || attribute.key === '_box_size'),
     })),
     subtotal: amount(cart.cost.subtotalAmount.amount), total: amount(cart.cost.totalAmount.amount), discounts: cart.discountCodes,

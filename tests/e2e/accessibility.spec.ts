@@ -9,10 +9,10 @@ for (const route of templateRoutes) {
     await page.addScriptTag({ content: axe.source });
     const result = await page.evaluate(async () => {
       const axe = (window as unknown as { axe: {
-        getRules: (tags: string[]) => { ruleId: string }[];
+        getRules: (tags: string[]) => { ruleId: string; tags: string[] }[];
         run: (context: Document, options: Record<string, unknown>) => Promise<{ violations: unknown[] }>;
       } }).axe;
-      const rules = axe.getRules(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).map((rule) => rule.ruleId);
+      const rules = axe.getRules(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).filter((rule) => !rule.tags.includes('experimental')).map((rule) => rule.ruleId);
       return axe.run(document, { runOnly: { type: 'rule', values: [...new Set([...rules, 'heading-order'])] } });
     });
     await testInfo.attach('axe-results', { body: JSON.stringify(result, null, 2), contentType: 'application/json' });

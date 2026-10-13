@@ -4,7 +4,7 @@ import { products, type Product, type ProductVariant } from '@/lib/catalogue';
 import type { PublicCart } from '@/lib/commerce-types';
 import { apiMessage } from '@/lib/browser-errors';
 
-export type Line = { id: string; variantId: string; productSlug: string; title: string; variantTitle: string; quantity: number; price: number; total: number; quantityLimit: number; image: string; available: boolean; attributes?: { key: string; value: string }[] };
+export type Line = { id: string; variantId: string; productSlug: string; title: string; variantTitle: string; quantity: number; price: number; total: number; quantityLimit: number; minimum?: number; increment?: number; image: string; available: boolean; attributes?: { key: string; value: string }[] };
 type Cart = { lines: Line[]; subtotal: number; total: number; currencyCode: string; totalQuantity: number; discounts?: { code: string; applicable: boolean }[]; warnings?: string[] };
 type Basket = { cart: Cart; mode: 'development' | 'live'; open: boolean; setOpen: (value: boolean) => void; busy: boolean; error: string; clearError: () => void; add: (product: Product, variant: ProductVariant, quantity?: number) => Promise<void>; update: (id: string, quantity: number) => Promise<void>; addBox: (components: { product: Product; quantity: number }[]) => Promise<void>; checkout: () => Promise<void>; discount: (code: string) => Promise<void> };
 const empty: Cart = { lines: [], subtotal: 0, total: 0, currencyCode: 'AUD', totalQuantity: 0 };
@@ -33,7 +33,7 @@ function restoredPreview(): Cart {
       const id = group ? `${variant.id}:${group}` : variant.id;
       const existing = merged.get(id);
       const nextQuantity = (existing?.quantity ?? 0) + quantity;
-      merged.set(id, { id, variantId: variant.id, productSlug: product.slug, title: product.name, variantTitle: group ? 'Mixed box · signature bag' : variant.label, quantity: nextQuantity, price: variant.price, total: nextQuantity * variant.price, quantityLimit: variant.quantityLimit, image: product.image, available: true, ...(group ? { attributes: [{ key: '_box_group', value: group }, { key: '_box_size', value: '6' }] } : {}) });
+      merged.set(id, { id, variantId: variant.id, productSlug: product.slug, title: product.name, variantTitle: group ? 'Mixed box · signature bag' : variant.label, quantity: nextQuantity, price: variant.price, total: nextQuantity * variant.price, quantityLimit: variant.quantityLimit, minimum: variant.minimum ?? 1, increment: variant.increment ?? 1, image: product.image, available: true, ...(group ? { attributes: [{ key: '_box_group', value: group }, { key: '_box_size', value: '6' }] } : {}) });
     }
     return total([...merged.values()]);
   } catch { return empty; }
@@ -59,6 +59,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
     const timeout = window.setTimeout(() => controller.abort(), 25000);
     async function initialise() {
       try {
+        if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') {
+          if (!active) return;
+          modeRef.current = 'development';
+          readyRef.current = true;
+          setMode('development');
+          commit(restoredPreview());
+          setReady(true);
+          return;
+        }
         const response = await fetch('/api/cart', { cache: 'no-store', signal: controller.signal });
         let nextMode: 'development' | 'live';
         let nextCart: Cart;
@@ -151,7 +160,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       if (!variant.available || !Number.isInteger(quantity) || quantity < 1 || inBasket + quantity > variant.quantityLimit) { setError('This quantity is unavailable. The limit includes bags already in your basket and mixed boxes.'); setOpen(true); return; }
       const standalone = cartRef.current.lines.find((line) => line.id === variant.id);
       const nextQuantity = (standalone?.quantity ?? 0) + quantity;
-      commit(total([...cartRef.current.lines.filter((line) => line.id !== variant.id), { id: variant.id, variantId: variant.id, productSlug: product.slug, title: product.name, variantTitle: variant.label, quantity: nextQuantity, price: variant.price, total: nextQuantity * variant.price, quantityLimit: variant.quantityLimit, image: product.image, available: true }]));
+      commit(total([...cartRef.current.lines.filter((line) => line.id !== variant.id), { id: variant.id, variantId: variant.id, productSlug: product.slug, title: product.name, variantTitle: variant.label, quantity: nextQuantity, price: variant.price, total: nextQuantity * variant.price, quantityLimit: variant.quantityLimit, minimum: variant.minimum ?? 1, increment: variant.increment ?? 1, image: product.image, available: true }]));
     }
     setOpen(true);
   }
@@ -183,7 +192,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const group = crypto.randomUUID();
       commit(total([...cartRef.current.lines, ...[...merged.values()].map(({ product, quantity }) => {
         const variant = product.variants[0];
-        return { id: `${variant.id}:${group}`, variantId: variant.id, productSlug: product.slug, title: product.name, variantTitle: 'Mixed box · signature bag', quantity, price: variant.price, total: quantity * variant.price, quantityLimit: variant.quantityLimit, image: product.image, available: true, attributes: [{ key: '_box_group', value: group }, { key: '_box_size', value: '6' }] };
+        return { id: `${variant.id}:${group}`, variantId: variant.id, productSlug: product.slug, title: product.name, variantTitle: 'Mixed box · signature bag', quantity, price: variant.price, total: quantity * variant.price, quantityLimit: variant.quantityLimit, minimum: variant.minimum ?? 1, increment: variant.increment ?? 1, image: product.image, available: true, attributes: [{ key: '_box_group', value: group }, { key: '_box_size', value: '6' }] };
       })]));
     }
     setOpen(true);

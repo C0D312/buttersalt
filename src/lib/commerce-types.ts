@@ -11,6 +11,8 @@ export type PublicCartLine = {
   total: number;
   available: boolean;
   quantityLimit: number;
+  minimum?: number;
+  increment?: number;
   image: string | null;
   attributes: Attribute[];
 };

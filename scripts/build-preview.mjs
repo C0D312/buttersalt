@@ -35,7 +35,7 @@ try {
     const child = spawn(process.execPath, [nextBin, 'build'], {
       cwd: root, stdio: 'inherit', windowsHide: true,
       env: {
-        ...process.env, BUTTERSALT_STATIC: '1', COMMERCE_MODE: 'development',
+        ...process.env, BUTTERSALT_STATIC: '1', NEXT_PUBLIC_STATIC_PREVIEW: 'true', COMMERCE_MODE: 'development',
         SHOPIFY_CHECKOUT_ENABLED: 'false', INDEXING_ENABLED: 'false',
         SHOPIFY_STORE_DOMAIN: '', SHOPIFY_STOREFRONT_PRIVATE_TOKEN: '',
         SHOPIFY_CUSTOMER_ACCOUNT_URL: '', FORMS_WEBHOOK_URL: '', FORMS_WEBHOOK_TOKEN: '',

@@ -21,6 +21,7 @@ export function ContactForm({ wholesale = false }: { wholesale?: boolean }) {
     setStatus('');
     setSuccess(false);
     try {
+      if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') throw new Error('Enquiries are not connected in this private preview. Your message has not been sent.');
       const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...payload, submissionId: submission.current.id }) });
       let result;
       try { result = await response.json(); } catch { throw new Error('Enquiries are not connected in this private preview. Your message has not been sent.'); }

@@ -24,7 +24,7 @@ export default defineConfig({
     { name: 'webkit', use: { ...devices['Desktop Safari'] } },
   ],
   webServer: externalServer ? undefined : {
-    command: 'npm run start -- --hostname 127.0.0.1',
+    command: 'npm run start',
     url: 'http://127.0.0.1:3000',
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

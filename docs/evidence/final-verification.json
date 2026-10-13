@@ -1,0 +1,1125 @@
+{
+  "generatedAt": "2026-10-13T15:17:09.233Z",
+  "meaning": "Latest observed outcome for each distinct test, across the full run and targeted repair run. Original reports are preserved unchanged.",
+  "browsers": {
+    "distinct": 153,
+    "passed": 153,
+    "failed": 0,
+    "runs": [
+      {
+        "source": "test-results/browser-full-results.json",
+        "startTime": "2026-10-13T14:53:22.092Z",
+        "duration": 406481.82899999997,
+        "expected": 140,
+        "skipped": 0,
+        "unexpected": 10,
+        "flaky": 0
+      },
+      {
+        "source": "test-results/browser-repair-first-results.json",
+        "startTime": "2026-10-13T15:06:18.165Z",
+        "duration": 75402.923,
+        "expected": 38,
+        "skipped": 0,
+        "unexpected": 4,
+        "flaky": 0
+      },
+      {
+        "source": "test-results/browser-repair-results.json",
+        "startTime": "2026-10-13T15:15:34.352Z",
+        "duration": 54078.608,
+        "expected": 18,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      {
+        "source": "test-results/browser-quantity-cap-results.json",
+        "startTime": "2026-10-13T15:16:51.134Z",
+        "duration": 6018.134,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    ]
+  },
+  "units": {
+    "passed": 80,
+    "failed": 0,
+    "source": "test-results/unit-results.json"
+  },
+  "testCases": [
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /shop",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /products/salted-caramel",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /bundles",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /build-a-box",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /gifts",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /about",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /faq",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /contact",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /cart",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /checkout",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /account",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /shipping",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /privacy",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "accessibility.spec.ts",
+      "title": "reduced motion preference is honoured",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /shop",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /products/salted-caramel",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /bundles",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /build-a-box",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /gifts",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /about",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /faq",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /contact",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /cart",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /checkout",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /account",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /shipping",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /privacy",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "accessibility.spec.ts",
+      "title": "reduced motion preference is honoured",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /shop",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /products/salted-caramel",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /bundles",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /build-a-box",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /gifts",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /about",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /faq",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /contact",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /cart",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /checkout",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /account",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /shipping",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "WCAG A/AA automated scan /privacy",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "accessibility.spec.ts",
+      "title": "reduced motion preference is honoured",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "api-boundaries.spec.ts",
+      "title": "development API is explicit and never creates an order or checkout",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "api-boundaries.spec.ts",
+      "title": "cart mutation rejects a cross-origin request",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "api-boundaries.spec.ts",
+      "title": "account access fails clearly until the provider is configured",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "api-boundaries.spec.ts",
+      "title": "unconnected form submission cannot return fake success",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "api-boundaries.spec.ts",
+      "title": "production responses include baseline security and indexing controls",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "api-boundaries.spec.ts",
+      "title": "development API is explicit and never creates an order or checkout",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "api-boundaries.spec.ts",
+      "title": "cart mutation rejects a cross-origin request",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "api-boundaries.spec.ts",
+      "title": "account access fails clearly until the provider is configured",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "api-boundaries.spec.ts",
+      "title": "unconnected form submission cannot return fake success",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "api-boundaries.spec.ts",
+      "title": "production responses include baseline security and indexing controls",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "api-boundaries.spec.ts",
+      "title": "development API is explicit and never creates an order or checkout",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "api-boundaries.spec.ts",
+      "title": "cart mutation rejects a cross-origin request",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "api-boundaries.spec.ts",
+      "title": "account access fails clearly until the provider is configured",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "api-boundaries.spec.ts",
+      "title": "unconnected form submission cannot return fake success",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "api-boundaries.spec.ts",
+      "title": "production responses include baseline security and indexing controls",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "shop search, filters, sorting and empty results work together",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "all eight flavours expose both working photographs and selectable variants",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "selected variant and quantities survive reload; updates and removal restore an empty bag",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "discovery bundle is represented in the preview bag, with checkout explicitly blocked",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "mixed box enforces capacity and preserves six component selections",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "mixed-box and standalone items with the same flavour remain separate after reload",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "corrupt saved baskets recover and fixture prices are recomputed",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "variant limits count quantities in every mixed-box group",
+      "status": "passed",
+      "source": "test-results/browser-quantity-cap-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "form errors stay truthful and preserve entered details when delivery is unconnected",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "mobile navigation and bag drawer contain keyboard focus and restore it on Escape",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "customer-journey.spec.ts",
+      "title": "invalid discount explains provider validation and does not alter fixture totals",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "shop search, filters, sorting and empty results work together",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "all eight flavours expose both working photographs and selectable variants",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "selected variant and quantities survive reload; updates and removal restore an empty bag",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "discovery bundle is represented in the preview bag, with checkout explicitly blocked",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "mixed box enforces capacity and preserves six component selections",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "mixed-box and standalone items with the same flavour remain separate after reload",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "corrupt saved baskets recover and fixture prices are recomputed",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "variant limits count quantities in every mixed-box group",
+      "status": "passed",
+      "source": "test-results/browser-quantity-cap-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "form errors stay truthful and preserve entered details when delivery is unconnected",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "mobile navigation and bag drawer contain keyboard focus and restore it on Escape",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "customer-journey.spec.ts",
+      "title": "invalid discount explains provider validation and does not alter fixture totals",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "shop search, filters, sorting and empty results work together",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "all eight flavours expose both working photographs and selectable variants",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "selected variant and quantities survive reload; updates and removal restore an empty bag",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "discovery bundle is represented in the preview bag, with checkout explicitly blocked",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "mixed box enforces capacity and preserves six component selections",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "mixed-box and standalone items with the same flavour remain separate after reload",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "corrupt saved baskets recover and fixture prices are recomputed",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "variant limits count quantities in every mixed-box group",
+      "status": "passed",
+      "source": "test-results/browser-quantity-cap-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "form errors stay truthful and preserve entered details when delivery is unconnected",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "mobile navigation and bag drawer contain keyboard focus and restore it on Escape",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "customer-journey.spec.ts",
+      "title": "invalid discount explains provider validation and does not alter fixture totals",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "network-recovery.spec.ts",
+      "title": "live-mode transport failures preserve the visible cart and retry an absolute update safely",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "network-recovery.spec.ts",
+      "title": "live-mode transport failures preserve the visible cart and retry an absolute update safely",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "network-recovery.spec.ts",
+      "title": "live-mode transport failures preserve the visible cart and retry an absolute update safely",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 320px viewport",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 375px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 390px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 430px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 768px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 1024px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 1440px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "home 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "home 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "shop 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "shop 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "product 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "product 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "builder 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "builder 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "cart 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "cart 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "responsive.spec.ts",
+      "title": "unknown routes provide an actionable 404",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 320px viewport",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 375px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 390px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 430px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 768px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 1024px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 1440px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "home 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "home 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "shop 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "shop 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "product 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "product 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "builder 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "builder 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "cart 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "cart 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "responsive.spec.ts",
+      "title": "unknown routes provide an actionable 404",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 320px viewport",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 375px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 390px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 430px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 768px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 1024px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "every public route fits a 1440px viewport",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "home 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "home 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "shop 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "shop 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "product 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "product 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "builder 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "builder 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "cart 390px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "cart 1440px evidence screenshot",
+      "status": "passed",
+      "source": "test-results/browser-repair-first-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "responsive.spec.ts",
+      "title": "unknown routes provide an actionable 404",
+      "status": "passed",
+      "source": "test-results/browser-full-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "network-recovery.spec.ts",
+      "title": "live cart quantity controls honour provider minimum and increments",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "network-recovery.spec.ts",
+      "title": "live cart quantity controls honour provider minimum and increments",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "network-recovery.spec.ts",
+      "title": "live cart quantity controls honour provider minimum and increments",
+      "status": "passed",
+      "source": "test-results/browser-repair-results.json"
+    }
+  ]
+}

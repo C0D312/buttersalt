@@ -70,7 +70,17 @@ for (const [name, route] of Object.entries(screenshotRoutes)) {
         await page.getByRole('button', { name: 'Add Chilli Lime to box', exact: true }).click();
         await page.getByRole('button', { name: 'Add Sweet & Salty to box', exact: true }).click();
       }
-      await page.evaluate(() => { window.scrollTo(0, 0); if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); });
+      await page.evaluate(async () => {
+        for (let position = 0; position <= document.documentElement.scrollHeight; position += Math.max(200, innerHeight * 0.85)) {
+          window.scrollTo(0, position);
+          await new Promise((resolve) => setTimeout(resolve, 80));
+        }
+        await Promise.all(Array.from(document.images).map((image) => image.decode().catch(() => undefined)));
+        window.scrollTo(0, 0);
+        if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+      });
+      const unloaded = await page.locator('img').evaluateAll((images) => images.filter((image) => !(image as HTMLImageElement).complete || (image as HTMLImageElement).naturalWidth === 0).map((image) => image.getAttribute('src')));
+      expect(unloaded, 'all full-page screenshot imagery must be loaded').toEqual([]);
       const directory = `test-results/screenshots/${testInfo.project.name}`;
       await mkdir(directory, { recursive: true });
       await testInfo.attach(`${name}-${width}`, { body: await page.screenshot({ path: `${directory}/${name}-${width}.png`, fullPage: true }), contentType: 'image/png' });
