@@ -83,7 +83,9 @@ for (const [name, route] of Object.entries(screenshotRoutes)) {
       expect(unloaded, 'all full-page screenshot imagery must be loaded').toEqual([]);
       const directory = `test-results/screenshots/${testInfo.project.name}`;
       await mkdir(directory, { recursive: true });
-      await testInfo.attach(`${name}-${width}`, { body: await page.screenshot({ path: `${directory}/${name}-${width}.png`, fullPage: true }), contentType: 'image/png' });
+      const screenshot = `${directory}/${name}-${width}.png`;
+      await page.screenshot({ path: screenshot, fullPage: true });
+      await testInfo.attach(`${name}-${width}`, { path: screenshot, contentType: 'image/png' });
     });
   }
 }

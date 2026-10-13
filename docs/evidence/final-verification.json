@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T15:17:09.233Z",
+  "generatedAt": "2026-10-13T15:33:36.453Z",
   "meaning": "Latest observed outcome for each distinct test, across the full run and targeted repair run. Original reports are preserved unchanged.",
   "browsers": {
     "distinct": 153,
@@ -38,6 +38,24 @@
         "startTime": "2026-10-13T15:16:51.134Z",
         "duration": 6018.134,
         "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      {
+        "source": "test-results/browser-font-responsive-results.json",
+        "startTime": "2026-10-13T15:24:04.413Z",
+        "duration": 41585.794,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      {
+        "source": "test-results/browser-font-screenshot-results.json",
+        "startTime": "2026-10-13T15:27:47.656Z",
+        "duration": 15036.371000000001,
+        "expected": 10,
         "skipped": 0,
         "unexpected": 0,
         "flaky": 0
@@ -727,7 +745,7 @@
       "file": "responsive.spec.ts",
       "title": "every public route fits a 320px viewport",
       "status": "passed",
-      "source": "test-results/browser-repair-results.json"
+      "source": "test-results/browser-font-responsive-results.json"
     },
     {
       "project": "chromium",
@@ -776,70 +794,70 @@
       "file": "responsive.spec.ts",
       "title": "home 390px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "home 1440px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "shop 390px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "shop 1440px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "product 390px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "product 1440px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "builder 390px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "builder 1440px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "cart 390px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
       "file": "responsive.spec.ts",
       "title": "cart 1440px evidence screenshot",
       "status": "passed",
-      "source": "test-results/browser-repair-first-results.json"
+      "source": "test-results/browser-font-screenshot-results.json"
     },
     {
       "project": "chromium",
@@ -853,7 +871,7 @@
       "file": "responsive.spec.ts",
       "title": "every public route fits a 320px viewport",
       "status": "passed",
-      "source": "test-results/browser-repair-results.json"
+      "source": "test-results/browser-font-responsive-results.json"
     },
     {
       "project": "firefox",
@@ -979,7 +997,7 @@
       "file": "responsive.spec.ts",
       "title": "every public route fits a 320px viewport",
       "status": "passed",
-      "source": "test-results/browser-repair-results.json"
+      "source": "test-results/browser-font-responsive-results.json"
     },
     {
       "project": "webkit",

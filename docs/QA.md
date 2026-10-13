@@ -46,8 +46,28 @@ No merchant credentials or approved product food information were supplied with 
 
 ## Results
 
-On 14 October 2026, **54 targeted unit/integration tests passed** across input validation, Shopify adapter behaviour with mocked provider responses, HTTP boundaries and the forms route with mocked destinations. Evidence: `test-results/unit-results.json`. Test/configuration lint passed with no errors or warnings. In this restricted Windows environment, the native Vitest configuration loader avoids an esbuild parent-directory permission error.
+On 14 October 2026, **80 targeted unit/integration tests passed** across six files. **153 distinct production browser checks passed after repairs**, with the latest observed outcome for each case recorded in [the verification summary](evidence/final-verification.json). These results combine the full three-engine run and targeted follow-up runs; they do not represent one uninterrupted 153-test run. Original reports, including the failures that led to repairs, are preserved in [the evidence index](evidence/README.md).
+
+The production build, strict TypeScript check and full lint passed with no errors or warnings. In this restricted Windows environment, the native Vitest configuration loader avoids an esbuild parent-directory permission error.
 
 These checks verified strict request validation, food approval gates, provider prices, stock/currency/quantity enforcement, six-component box representation, duplicate-add recovery, mixed-box completeness at checkout, allowlisted HTTPS destinations, query retry and non-repeated uncertain mutations. Forms tests verified HTTP acceptance before success, deduplication, content mismatch rejection, failed-destination errors and retry after an uncertain result. HTTP tests verified bounded chunked input, cross-origin rejection, unknown-error redaction and cookie-resistant anonymous rate limits.
 
-Production browser and Lighthouse measurements are pending the first production build. Do not interpret their coverage list above as a passing result. The private preview's intentional `noindex` policy may prevent a 100 SEO score; preserving that policy takes precedence over indexing the provisional catalogue.
+Browser verification used Playwright Chromium 156, Firefox 157 and WebKit 27.2 on Windows. The completed matrix covers 28 routes at all seven required widths in all three engines: **588 route/viewport combinations**. No unintended horizontal overflow, missing visible images, broken internal links, unhandled console errors or hydration exceptions remained in these checks. Mobile navigation and bag drawers retain keyboard focus and restore it on Escape. Saved screenshots were visually inspected for cropping, legibility and overlap; each screenshot loads and decodes the entire page's imagery before capture.
+
+The private static export also passed **four Chromium smoke checks** on `http://127.0.0.1:3001`: selected variant/quantity/persistence/removal, discovery bundle with checkout blocked, six-bag builder capacity, and truthful unconnected form errors with preserved input. This validates the static preview branch separately; it does not claim that the static deployment runs the Shopify server adapter.
+
+## Production mobile Lighthouse
+
+Three consistent measurements were run per page after font and image optimisation. Medians:
+
+| Page | Performance | Accessibility | Best practices | SEO | LCP | CLS |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Home | 95 | 100 | 100 | 69 | 3.003 s | 0 |
+| Shop | 99 | 100 | 100 | 69 | 1.954 s | 0.00054 |
+| Salted Caramel | 99 | 100 | 100 | 69 | 2.105 s | 0 |
+
+The performance, accessibility and best-practices score targets were met on all three measured pages. **The home LCP remains above the 2.5-second aim.** Shop and product LCP, and all three CLS measurements, meet their aims. The intentional private `noindex`/robots exclusion prevents the requested 100 SEO score. Keep the concept catalogue private; re-test SEO after an explicitly approved public launch. One home run also recorded a Chrome IO-stream timeout retrieving robots.txt; a direct production request returned valid robots text with HTTP 200. Its individual SEO score was 61; the three-run median remained 69.
+
+Measurements used Lighthouse 13.5.0 and headless Chrome 154 against the local **production Next.js build** at `http://127.0.0.1:3000`, with a 412 × 823 mobile viewport, device scale factor 1.75, simulated mobile networking (150 ms RTT, 1638.4 Kbps throughput) and 4× CPU slowdown. Full configuration, browser environment and benchmark index are recorded in [the summary](evidence/lighthouse/summary.json); all nine raw JSON and HTML reports are retained. These are laboratory results, not measured field performance or a measurement of the hosted static preview.
+
+No physical iPhone, Android phone or tablet was available. Actual-device behaviour, deployed CDN performance and real-user LCP/CLS/INP remain unverified. The `next/web-vitals` instrumentation is ready for a configured same-origin collection endpoint; no field INP result or 200 ms achievement is claimed.

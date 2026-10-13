@@ -14,7 +14,9 @@ Configure HTTPS, canonical origin, same-origin request checks and the real custo
 
 Run npm run build:preview to create out/. The script verifies the project root, temporarily renames src/app/api to .build-api, and moves the previous .next inside that backup so stale generated API types cannot enter compilation. It forces BUTTERSALT_STATIC=1, development commerce, disabled checkout/indexing and disconnected merchant/form services. Existing exported output is preserved while the new export builds.
 
-After building, the script restores API source and the previous .next in finally. If export fails, it restores the earlier out/. A successful static export is intentionally separate from npm run build; run the normal build before npm start or a server deployment. Stop active build/test operations before switching build targets.
+The preview uses tsconfig.preview.json to check application source while server-only API tests are isolated; the normal typecheck and test commands still check the complete project. It also temporarily moves the live sitemap to .build-api/.sitemap-previous.ts, then writes an empty private sitemap.xml into out/. The live sitemap retains its fresh provider-backed behaviour.
+
+After building, the script restores API source, the live sitemap and the previous .next in finally. If export fails, it restores the earlier out/. A successful static export is intentionally separate from npm run build; run the normal build before npm start or a server deployment. Stop active build/test operations before switching build targets.
 
 Sites should upload only out/ as the static site output. The existing Sites hosting project can register npm run build:preview as its build command and out as its output directory. Do not include .env.local, API backups, .next, source credentials or originals in the upload. Keep Sites visibility private until explicit launch approval.
 
@@ -26,7 +28,7 @@ For local inspection, npm run serve:preview serves out on loopback port 3000. PO
 
 Ordinary failures restore backups automatically. If the process or machine is killed before finally completes, stop builds and inspect .build-api before starting again. It contains the original API directory and may contain .next-previous and .out-previous. Preserve those directories.
 
-Restore .next-previous to the project .next after moving any incomplete generated .next aside. Restore .out-previous to out after moving incomplete out aside, unless a complete new export has already been verified. Then move the remaining .build-api directory back to src/app/api. Verify all resolved paths are within this project before any recursive removal. Re-run npm run typecheck and the intended build. The build refuses to overwrite an existing .build-api backup.
+Restore .next-previous to the project .next after moving any incomplete generated .next aside. Restore .out-previous to out after moving incomplete out aside, unless a complete new export has already been verified. If .sitemap-previous.ts is present, restore it to src/app/sitemap.ts. Then move the remaining .build-api directory back to src/app/api. Verify all resolved paths are within this project before any recursive removal. Re-run npm run typecheck and the intended build. The build refuses to overwrite an existing .build-api backup.
 
 ## Owner dependencies before launch
 

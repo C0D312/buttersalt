@@ -14,6 +14,8 @@ const inside = (relative) => {
 };
 const api = inside('src/app/api');
 const backup = inside('.build-api');
+const sitemapSource = inside('src/app/sitemap.ts');
+const sitemapBackup = inside('.build-api/.sitemap-previous.ts');
 const nextOutput = inside('.next');
 const nextBackup = inside('.build-api/.next-previous');
 const exported = inside('out');
@@ -23,10 +25,15 @@ if (await exists(backup)) throw new Error('A prior preview backup exists at .bui
 if (!(await exists(api))) throw new Error('Expected API source directory is missing. Inspect .build-api before continuing.');
 await fs.rename(api, backup); // Atomic ownership of the temporary backup.
 let movedNext = false;
+let movedSitemap = false;
 let movedExport = false;
 let startedBuild = false;
 let success = false;
 try {
+  // Next requires a statically forced metadata route for export, while the
+  // selling application's sitemap must retain fresh provider data. The private
+  // export has an empty sitemap and never fetches or indexes the catalogue.
+  await fs.rename(sitemapSource, sitemapBackup); movedSitemap = true;
   if (await exists(nextOutput)) { await fs.rename(nextOutput, nextBackup); movedNext = true; }
   if (await exists(exported)) { await fs.rename(exported, exportBackup); movedExport = true; }
   const nextBin = require.resolve('next/dist/bin/next');
@@ -46,6 +53,7 @@ try {
   });
   if (code !== 0) throw new Error('Static preview build failed. Previous output and API source will be restored.');
   if (!(await exists(inside('out/index.html')))) throw new Error('Build did not produce out/index.html.');
+  await fs.writeFile(inside('out/sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>\n');
   success = true;
   console.log('Static development preview exported to out/. Payments, orders and forms are unavailable.');
 } finally {
@@ -56,5 +64,6 @@ try {
     if (startedBuild && await exists(exported)) await fs.rm(exported, { recursive: true, force: true });
     if (movedExport) await fs.rename(exportBackup, exported);
   } else if (movedExport) await fs.rm(exportBackup, { recursive: true, force: true });
+  if (movedSitemap) await fs.rename(sitemapBackup, sitemapSource);
   await fs.rename(backup, api);
 }

@@ -4,6 +4,8 @@ A complete contemporary popcorn brand and custom Next.js storefront, built for A
 
 Source repository: [C0D312/buttersalt](https://github.com/C0D312/buttersalt) (private).
 
+Private preview address: [buttersalt.kamal23q.chatgpt.site](https://buttersalt.kamal23q.chatgpt.site). Sign in with the owning account. See the [handover](docs/HANDOVER.md) for implementation scope, verified behaviour and launch dependencies.
+
 ## Start locally
 
 Use Node.js 22 LTS or a compatible newer supported release, and npm. Install the exact dependency tree from the lockfile:

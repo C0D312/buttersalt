@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 // Preserve original reports. This summary uses the latest observed outcome per
 // uniquely named browser test after targeted repairs; it is not a fabricated run.
-const reports = ['test-results/browser-full-results.json', 'test-results/browser-repair-first-results.json', 'test-results/browser-repair-results.json', 'test-results/browser-quantity-cap-results.json'];
+const reports = ['test-results/browser-full-results.json', 'test-results/browser-repair-first-results.json', 'test-results/browser-repair-results.json', 'test-results/browser-quantity-cap-results.json', 'test-results/browser-font-responsive-results.json', 'test-results/browser-font-screenshot-results.json'];
 const latest = new Map();
 const runStats = [];
 function collect(suite, source) {

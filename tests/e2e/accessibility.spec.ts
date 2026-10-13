@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import axe from 'axe-core';
+import { writeFile } from 'node:fs/promises';
 const templateRoutes = ['/', '/shop', '/products/salted-caramel', '/bundles', '/build-a-box', '/gifts', '/about', '/faq', '/contact', '/cart', '/checkout', '/account', '/shipping', '/privacy'];
 
 for (const route of templateRoutes) {
@@ -15,7 +16,9 @@ for (const route of templateRoutes) {
       const rules = axe.getRules(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).filter((rule) => !rule.tags.includes('experimental')).map((rule) => rule.ruleId);
       return axe.run(document, { runOnly: { type: 'rule', values: [...new Set([...rules, 'heading-order'])] } });
     });
-    await testInfo.attach('axe-results', { body: JSON.stringify(result, null, 2), contentType: 'application/json' });
+    const evidence = testInfo.outputPath('axe-results.json');
+    await writeFile(evidence, JSON.stringify(result, null, 2));
+    await testInfo.attach('axe-results', { path: evidence, contentType: 'application/json' });
     expect(result.violations).toEqual([]);
   });
 }

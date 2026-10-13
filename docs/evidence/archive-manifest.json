@@ -1,0 +1,51 @@
+[
+  {
+    "file": "docs/evidence/browser-full-results.json",
+    "archive": "docs/evidence/browser-full-results.json.gz",
+    "rawBytes": 68465749,
+    "archiveBytes": 42774464,
+    "sha256": "aac2de4f19aa469a621401c04ab37166f3a138af570e5a3136523858e7199982"
+  },
+  {
+    "file": "docs/evidence/browser-repair-first-results.json",
+    "archive": "docs/evidence/browser-repair-first-results.json.gz",
+    "rawBytes": 76741121,
+    "archiveBytes": 56340809,
+    "sha256": "9e1e60b31113e0996a275df32a3e2d02aef4591070967146cbafbd0ebc415188"
+  },
+  {
+    "file": "docs/evidence/browser-repair-results.json",
+    "archive": "docs/evidence/browser-repair-results.json.gz",
+    "rawBytes": 38012933,
+    "archiveBytes": 28412264,
+    "sha256": "9a5e5faa2505734ee2faa2c4ac5ea186fd233c63f12592f889a92e93580f7565"
+  },
+  {
+    "file": "docs/evidence/browser-quantity-cap-results.json",
+    "archive": "docs/evidence/browser-quantity-cap-results.json.gz",
+    "rawBytes": 10430,
+    "archiveBytes": 1783,
+    "sha256": "1ccda515d955b8c0947565b2822c1ec20439e01e553433224305a723c31b5cdf"
+  },
+  {
+    "file": "docs/evidence/browser-font-responsive-results.json",
+    "archive": "docs/evidence/browser-font-responsive-results.json.gz",
+    "rawBytes": 11055,
+    "archiveBytes": 1860,
+    "sha256": "0dadd0fea8b6494332e3019fba06b4de6d1899b02e58a68554873133bfee6463"
+  },
+  {
+    "file": "docs/evidence/browser-font-screenshot-results.json",
+    "archive": "docs/evidence/browser-font-screenshot-results.json.gz",
+    "rawBytes": 18926,
+    "archiveBytes": 2374,
+    "sha256": "d632acc28d6df75026d6599c8a893401c21fae7af868ca94419d6586499ca1ba"
+  },
+  {
+    "file": "docs/evidence/static-smoke-results.json",
+    "archive": "docs/evidence/static-smoke-results.json.gz",
+    "rawBytes": 8958,
+    "archiveBytes": 1787,
+    "sha256": "b3f7ff175d6f908d29ebd84369547985a0461a21467c9f14cac95f5d87638d55"
+  }
+]

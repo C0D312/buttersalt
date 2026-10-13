@@ -46,6 +46,10 @@ Deploy the reproducible production build to a Next.js-compatible hosting service
 
 Run the production checks documented in [QA.md](QA.md) against the deployment URL before approving launch. Confirm image optimisation, hosted checkout, callbacks and form delivery from the deployed hostname.
 
+The local production build and private static export were both tested. The static export passed cart/box/form smoke checks and accepts no payment. The full Next.js build contains the server commerce adapter. Current evidence records 80 unit/integration checks and 153 distinct browser checks passing after repairs. Home mobile laboratory LCP remains 3.003 seconds against the 2.5-second aim; SEO is intentionally blocked while the catalogue is private. Review deployed performance, actual devices and public SEO before launch.
+
+Configure `NEXT_PUBLIC_VITALS_ENDPOINT` only after supplying a same-origin collection service and reviewing the actual privacy/consent requirements. The hook reports standard web-vitals measurements, including INP, but no field data has been collected or verified in this project.
+
 ## Approval to publish
 
 The owner must explicitly authorise public launch and live payments after merchant sandbox checks, business content review and preview inspection. At that point, configure the live provider, canonical public domain, public robots/sitemap behaviour and verified product structured data. Re-run SEO and commerce checks on the final domain. Laboratory measurements are not field performance; review real-user LCP, CLS and INP after release.
