@@ -8,7 +8,7 @@ export const settings = {
   mixedBoxSize: 6,
   delivery: 'Delivery options and costs will be confirmed before launch. In live mode, Shopify calculates delivery at checkout.',
   foodNotice: 'Flavour and packaging concepts. Ingredients, allergens, nutrition, sizes and stock await confirmation. These concepts are unavailable for live sale.',
-  priceNotice: 'Illustrative AUD prices for this private development preview.',
+  priceNotice: 'Illustrative AUD prices for this development preview.',
   imageryNotice: 'Original concept visualisations; not photographs of manufactured stock.',
   contactEmail: null as string | null,
   legalEntity: null as string | null,
@@ -27,7 +27,7 @@ export const brand = {
 };
 
 export const faqs = [
-  { question: 'Can I buy buttersalt yet?', answer: 'This is a private development preview of the buttersalt concept range. You can explore flavours and try the basket, but payments and orders are unavailable until products and merchant services are confirmed.' },
+  { question: 'Can I buy buttersalt yet?', answer: 'This is a development preview of the buttersalt concept range. You can explore flavours and try the basket, but payments and orders are unavailable until products and merchant services are confirmed.' },
   { question: 'Where can I find ingredients and allergens?', answer: 'Verified ingredients, allergen statements and nutrition will appear on each product page before that product becomes available for sale. Please do not rely on concept imagery or flavour names for dietary information.' },
   { question: 'What are the pack sizes?', answer: 'Pack sizes and weights are being confirmed. The preview uses illustrative variant names without claiming a finished size.' },
   { question: 'How does a mixed box work?', answer: 'Choose six bags from the flavour family. In live commerce, each selected bag becomes a real inventory-tracked Shopify order line, grouped with a box reference for fulfilment. Prices are the sum of the component prices unless an approved Shopify discount applies.' },

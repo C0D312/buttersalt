@@ -7,6 +7,7 @@ const output = path.resolve(root, 'out');
 if (!output.startsWith(root + path.sep)) throw new Error('Preview output must remain inside the project.');
 await fs.access(path.join(output, 'index.html'));
 const port = Number(process.env.PORT ?? 3000);
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('PORT must be an integer from 1 to 65535.');
 const mime = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
@@ -32,7 +33,13 @@ function json(response, status, payload, method) {
 const server = http.createServer(async (request, response) => {
   headers(response);
   try {
-    const pathname = decodeURIComponent(new URL(request.url ?? '/', 'http://127.0.0.1').pathname);
+    let pathname = decodeURIComponent(new URL(request.url ?? '/', 'http://127.0.0.1').pathname);
+    if (basePath) {
+      if (pathname !== basePath && !pathname.startsWith(basePath + '/')) {
+        response.writeHead(404); response.end('Not found'); return;
+      }
+      pathname = pathname.slice(basePath.length) || '/';
+    }
     if (pathname.startsWith('/api/')) {
       if (pathname === '/api/cart' && ['GET', 'HEAD'].includes(request.method ?? 'GET')) {
         json(response, 200, { mode: 'development', cart: null }, request.method); return;
@@ -75,5 +82,5 @@ const server = http.createServer(async (request, response) => {
     response.end('The preview request could not be served.');
   }
 });
-server.listen(port, '127.0.0.1', () => console.log('buttersalt static development preview: http://127.0.0.1:' + port));
+server.listen(port, '127.0.0.1', () => console.log('buttersalt static development preview: http://127.0.0.1:' + port + basePath + '/'));
 for (const signal of ['SIGINT', 'SIGTERM']) process.on(signal, () => server.close(() => process.exit(0)));

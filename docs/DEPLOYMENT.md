@@ -1,10 +1,18 @@
-# Private preview and production deployment
+# Public preview and production deployment
+
+## GitHub Pages
+
+The owner has authorised public preview sharing. The direct website is https://c0d312.github.io/buttersalt/ and requires no ChatGPT or GitHub sign-in. The repository is public. GitHub Pages uses GitHub Actions as its publishing source; .github/workflows/pages.yml exports and deploys out/ on pushes to main or manual dispatch.
+
+The workflow obtains NEXT_PUBLIC_BASE_PATH and NEXT_PUBLIC_SITE_URL from actions/configure-pages, then runs npm run build:preview. Next navigation/chunks, the static image loader and metadata icons retain the repository path. To verify locally, set NEXT_PUBLIC_BASE_PATH=/buttersalt for both build:preview and serve:preview. Open http://127.0.0.1:3000/buttersalt/.
+
+This is a public development preview with a demonstration basket; payments, orders and form delivery are unavailable. Public sharing does not enable live commerce. GitHub Pages serves static files and does not execute the Shopify API routes. Future pushes to main publish to Pages automatically. The earlier Sites deployment remains separate and requires its own deployment workflow when updating it.
 
 ## Full Next.js application
 
 Deploy the repository to a host supporting Next.js 16 server routes and Node.js, such as Vercel. Use npm ci, npm run build and the hosting provider's normal Next.js runtime; npm start is the local production-server command. This deployment contains the real server-only Shopify adapter and configured form delivery. Do not deploy the static export as a selling system.
 
-Keep the preview private using the provider's deployment protection or authentication. Set NEXT_PUBLIC_SITE_URL to the actual HTTPS preview origin, COMMERCE_MODE=development, SHOPIFY_CHECKOUT_ENABLED=false and INDEXING_ENABLED=false. Store secret credentials only in encrypted server environment variables. Do not put secret values in NEXT_PUBLIC variables, repository files, build logs or browser storage.
+Set NEXT_PUBLIC_SITE_URL to the actual HTTPS preview origin, COMMERCE_MODE=development, SHOPIFY_CHECKOUT_ENABLED=false and INDEXING_ENABLED=false. Use deployment protection if a future preview requires private access. Store secret credentials only in encrypted server environment variables. Do not put secret values in NEXT_PUBLIC variables, repository files, build logs or browser storage.
 
 The complete environment template is .env.example. Shopify/form variables are described in [COMMERCE.md](COMMERCE.md). NEXT_PUBLIC_VITALS_ENDPOINT is optional and must be a same-origin destination accepting the small web-vitals payload. No collection destination is configured in the checked-in project; field LCP, CLS and INP remain to be measured after deploying that destination.
 
@@ -18,7 +26,7 @@ The preview uses tsconfig.preview.json to check application source while server-
 
 After building, the script restores API source, the live sitemap and the previous .next in finally. If export fails, it restores the earlier out/. A successful static export is intentionally separate from npm run build; run the normal build before npm start or a server deployment. Stop active build/test operations before switching build targets.
 
-Sites should upload only out/ as the static site output. The existing Sites hosting project can register npm run build:preview as its build command and out as its output directory. Do not include .env.local, API backups, .next, source credentials or originals in the upload. Keep Sites visibility private until explicit launch approval.
+Sites should upload only out/ as the static site output. The existing Sites hosting project can register npm run build:preview as its build command and out as its output directory. Omit NEXT_PUBLIC_BASE_PATH when building for its root URL. Do not include .env.local, API backups, .next, source credentials or originals in the upload. Preserve its owner-approved public preview visibility.
 
 The canonical GitHub repository contains large original images and raw QA archives. The Sites source service rejected those archival Git objects. After committing the canonical source and building out/, scripts/prepare-sites-source.mjs can create a new, empty .sites-deploy checkout with the same runtime source and tested export, omitting assets/originals and docs/evidence. The Sites source helper owns this checkout's separate Git history and publication; use the same project ID and audience. The script refuses to replace an existing deployment checkout. Retain it and use the Sites source workflow for future updates. Complete originals/evidence remain in GitHub and the main workspace.
 
@@ -36,6 +44,6 @@ Restore .next-previous to the project .next after moving any incomplete generate
 
 ## Owner dependencies before launch
 
-The deliverable is ready for private review, not live selling. Supply verified food/business/policy data, configure the merchant store, actual inventory/prices, shipping/tax/payment settings, customer accounts and form destination, then retain real provider sandbox evidence. Check mixed-box component inventory and resulting order lines. Verify successful/declined/cancelled/authentication-required payments where supported, account ownership, fulfilment and refunds.
+The deliverable is ready for public review, not live selling. Supply verified food/business/policy data, configure the merchant store, actual inventory/prices, shipping/tax/payment settings, customer accounts and form destination, then retain real provider sandbox evidence. Check mixed-box component inventory and resulting order lines. Verify successful/declined/cancelled/authentication-required payments where supported, account ownership, fulfilment and refunds.
 
-The owner must explicitly authorise public launch and live payments. Enable indexing only on the approved public origin, with approved products and final metadata; confirm robots, sitemap and social previews there. Re-run production browser/accessibility/performance checks after hosting changes. See [LAUNCH.md](LAUNCH.md) for the full business and provider checklist.
+Public preview sharing is authorised; live selling and payments still require owner authorisation. Enable indexing only on the approved public origin, with approved products and final metadata; confirm robots, sitemap and social previews there. Re-run production browser/accessibility/performance checks after hosting changes. See [LAUNCH.md](LAUNCH.md) for the full business and provider checklist.

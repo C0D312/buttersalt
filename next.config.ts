@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 const staticPreview = process.env.BUTTERSALT_STATIC === '1';
 const config: NextConfig = {
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
   ...(staticPreview ? { output: 'export', trailingSlash: true, typescript: { tsconfigPath: 'tsconfig.preview.json' } } : {}),
   images: { ...(staticPreview ? { loader: 'custom', loaderFile: './src/lib/static-image-loader.ts' } : {}), remotePatterns: [{protocol:'https',hostname:'cdn.shopify.com'}] },
   poweredByHeader: false,

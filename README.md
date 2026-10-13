@@ -1,10 +1,10 @@
 # buttersalt
 
-A complete contemporary popcorn brand and custom Next.js storefront, built for Australian English and AUD. The checked-in range is a private development catalogue: eight flavour concepts, discovery/mixed/gift boxes, original editable branding, generated concept photography and illustrative prices. The preview accepts no payments and creates no orders.
+A complete contemporary popcorn brand and custom Next.js storefront, built for Australian English and AUD. The checked-in range is a development catalogue: eight flavour concepts, discovery/mixed/gift boxes, original editable branding, generated concept photography and illustrative prices. The preview accepts no payments and creates no orders.
 
-Source repository: [C0D312/buttersalt](https://github.com/C0D312/buttersalt) (private).
+**Open the website:** [c0d312.github.io/buttersalt](https://c0d312.github.io/buttersalt/). Public preview, no ChatGPT or GitHub sign-in required.
 
-Private preview address: [buttersalt.kamal23q.chatgpt.site](https://buttersalt.kamal23q.chatgpt.site). Sign in with the owning account. See the [handover](docs/HANDOVER.md) for implementation scope, verified behaviour and launch dependencies.
+Public source repository: [C0D312/buttersalt](https://github.com/C0D312/buttersalt). The earlier [Sites preview](https://buttersalt.kamal23q.chatgpt.site) is also public. See the [handover](docs/HANDOVER.md) for implementation scope, verified behaviour and launch dependencies.
 
 ## Start locally
 
@@ -25,7 +25,7 @@ npm start
 
 The production application uses Next.js 16, React 19, strict TypeScript and Tailwind CSS 4. Server-only commerce routes provide the Shopify adapter; interactive browser code handles navigation, searching/filtering/sorting, variant choices, cart controls, mixed boxes and forms.
 
-## Static private review
+## Static preview
 
 ```sh
 npm run build:preview
@@ -34,7 +34,7 @@ npm run serve:preview
 
 Open http://127.0.0.1:3000. This separate export is for visual and development-basket review on Sites or another static host. It has no backend. The build temporarily isolates API routes and old Next generated types, forces development mode and restores source/previous Next build in finally. It embeds NEXT_PUBLIC_STATIC_PREVIEW=true so the basket and forms do not depend on API responses from a static host. Browser fixture baskets persist locally; discounts, checkout, orders, customer authentication and form delivery remain unavailable. The local preview server gives explicit JSON development responses and applies security/noindex headers. Set PORT to use another local port.
 
-Static hosting must apply its own access control and response headers; the local preview server is not deployed by copying out/. Noindex is an indexing control, not password protection. Use the intended private Sites visibility or hosting provider authentication. [Deployment instructions](docs/DEPLOYMENT.md) explain both deployment targets and recovery.
+GitHub Pages automatically builds and publishes this preview on pushes to main via .github/workflows/pages.yml. Its build sets NEXT_PUBLIC_BASE_PATH=/buttersalt and the Pages site URL. Use the same base path for local export and preview when checking Pages paths. Static hosting must apply its own response headers; the local preview server is not deployed by copying out/. Noindex is an indexing control, not password protection. [Deployment instructions](docs/DEPLOYMENT.md) explain the deployment targets and recovery.
 
 ## What is included
 

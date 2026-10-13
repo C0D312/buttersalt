@@ -54,6 +54,7 @@ try {
   if (code !== 0) throw new Error('Static preview build failed. Previous output and API source will be restored.');
   if (!(await exists(inside('out/index.html')))) throw new Error('Build did not produce out/index.html.');
   await fs.writeFile(inside('out/sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>\n');
+  await fs.writeFile(inside('out/.nojekyll'), '');
   success = true;
   console.log('Static development preview exported to out/. Payments, orders and forms are unavailable.');
 } finally {

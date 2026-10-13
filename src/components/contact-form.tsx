@@ -21,10 +21,10 @@ export function ContactForm({ wholesale = false }: { wholesale?: boolean }) {
     setStatus('');
     setSuccess(false);
     try {
-      if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') throw new Error('Enquiries are not connected in this private preview. Your message has not been sent.');
+      if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') throw new Error('Enquiries are not connected in this development preview. Your message has not been sent.');
       const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...payload, submissionId: submission.current.id }) });
       let result;
-      try { result = await response.json(); } catch { throw new Error('Enquiries are not connected in this private preview. Your message has not been sent.'); }
+      try { result = await response.json(); } catch { throw new Error('Enquiries are not connected in this development preview. Your message has not been sent.'); }
       if (!response.ok) throw new Error(apiMessage(result, 'Your message could not be delivered. Please retry.'));
       if (result.success !== true) throw new Error('Your enquiry could not be confirmed. Please retry.');
       setStatus('Your enquiry was accepted. Thanks for getting in touch.');

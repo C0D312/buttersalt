@@ -23,10 +23,10 @@ export function SignupForm() {
     setStatus('');
     setSuccess(false);
     try {
-      if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') throw new Error('Newsletter signup is not connected in this private preview. Your signup has not been sent.');
+      if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === 'true') throw new Error('Newsletter signup is not connected in this development preview. Your signup has not been sent.');
       const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...payload, submissionId: submission.current.id }) });
       let data;
-      try { data = await response.json(); } catch { throw new Error('Newsletter signup is not connected in this private preview. Your signup has not been sent.'); }
+      try { data = await response.json(); } catch { throw new Error('Newsletter signup is not connected in this development preview. Your signup has not been sent.'); }
       if (!response.ok) throw new Error(apiMessage(data, 'We could not confirm your signup. Please retry.'));
       if (data.success !== true) throw new Error('Your signup could not be confirmed. Please retry.');
       setStatus('Thanks. Your signup was accepted.');
