@@ -1,0 +1,23 @@
+{
+  "deployedAt": "2026-10-13T15:46:00.565885+00:00",
+  "previewUrl": "https://buttersalt.kamal23q.chatgpt.site",
+  "access": "owner-private",
+  "status": "succeeded",
+  "projectId": "appgprj_6ace3c3a31408191b4740c1818634996",
+  "versionId": "appgprj_6ace3c3a31408191b4740c1818634996~appgver_7e45a5331f80819185f6805fc8be5ff8",
+  "deploymentId": "appgdep_6ace521b9cfc81918e0149439ba72102",
+  "sitesSourceCommit": "c7124d30daf7e603c79d4af341ceea3fcb0925e2",
+  "canonicalSourceRepository": "https://github.com/C0D312/buttersalt",
+  "canonicalSourceCommit": "4b9c5df",
+  "verifiedRuntimeFiles": 149,
+  "staticSmoke": {
+    "passed": 4,
+    "failed": 0
+  },
+  "githubCI": {
+    "url": "https://github.com/C0D312/buttersalt/actions/runs/38421723142",
+    "commit": "9fb1223961291a172190016d676047f8a11e0da4",
+    "status": "success"
+  },
+  "liveCommerceEnabled": false
+}
