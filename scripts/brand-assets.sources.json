@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "original-butter-sea-salt",
+    "type": "bag",
+    "source": "assets/originals/original-butter-sea-salt-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-d67c14cb-c86a-445d-bb49-1b43dea69c8a.png",
+    "beforeOriginal": "assets/originals/original-butter-sea-salt-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-33bbf9ff-cd0c-4e31-bde3-808ed5f6af78.png"
+  },
+  {
+    "slug": "sweet-salty",
+    "type": "bag",
+    "source": "assets/originals/sweet-salty-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-64444280-4030-47a1-8c58-b917c94ce875.png",
+    "beforeOriginal": "assets/originals/sweet-salty-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-85c6ba01-133e-49a8-8619-a576cebb18aa.png"
+  },
+  {
+    "slug": "salted-caramel",
+    "type": "bag",
+    "source": "assets/originals/salted-caramel-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-25e55a3e-9da2-40b8-a3a9-ac122c2e49f5.png",
+    "beforeOriginal": "assets/originals/salted-caramel-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-709b5989-b543-488f-a308-f3f93a95341e.png"
+  },
+  {
+    "slug": "cheddar-cheese",
+    "type": "bag",
+    "source": "assets/originals/cheddar-cheese-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-e79bf0f8-0bb3-4390-8715-cd0c61161656.png",
+    "beforeOriginal": "assets/originals/cheddar-cheese-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-e3575111-f293-4d46-9307-1a69ed93f5cf.png"
+  },
+  {
+    "slug": "chocolate-drizzle",
+    "type": "bag",
+    "source": "assets/originals/chocolate-drizzle-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-b1c9f0e1-532e-4596-a077-3b88dccb2a7b.png",
+    "beforeOriginal": "assets/originals/chocolate-drizzle-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-57628c5d-de1d-48bc-b8c9-9ab4a06a646d.png"
+  },
+  {
+    "slug": "chilli-lime",
+    "type": "bag",
+    "source": "assets/originals/chilli-lime-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-93ffa529-a1d9-4ef7-94e0-a6afe9231277.png",
+    "beforeOriginal": "assets/originals/chilli-lime-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-68632851-07c5-4dcc-b9c7-2ffaaa722825.png"
+  },
+  {
+    "slug": "truffle-parmesan",
+    "type": "bag",
+    "source": "assets/originals/truffle-parmesan-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-17ee88bc-fa94-49ec-9d1d-aeb42b915c22.png",
+    "beforeOriginal": "assets/originals/truffle-parmesan-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-38f2082c-e91e-401b-b1a1-2ff57e5df74d.png"
+  },
+  {
+    "slug": "cinnamon-sugar",
+    "type": "bag",
+    "source": "assets/originals/cinnamon-sugar-bag-approved.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-b513560a-919d-4477-9470-44104c0a17db.png",
+    "beforeOriginal": "assets/originals/cinnamon-sugar-bag-v1.png",
+    "refinementGeneratedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-ab707f2f-ae01-4c99-9db5-3e0915cda5d9.png"
+  },
+  {
+    "slug": "original-butter-sea-salt",
+    "type": "closeup",
+    "source": "assets/originals/original-butter-sea-salt-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-cedc939e-ca04-4fbf-a583-c12ba9c810c4.png"
+  },
+  {
+    "slug": "sweet-salty",
+    "type": "closeup",
+    "source": "assets/originals/sweet-salty-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-385e29ca-519c-41b0-99a6-d74c7fc9bf5e.png"
+  },
+  {
+    "slug": "salted-caramel",
+    "type": "closeup",
+    "source": "assets/originals/salted-caramel-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-daa58d5a-59ee-4778-98a4-8f6877c43da0.png"
+  },
+  {
+    "slug": "cheddar-cheese",
+    "type": "closeup",
+    "source": "assets/originals/cheddar-cheese-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-85713a20-092a-4eac-9b55-5fd04df7904b.png"
+  },
+  {
+    "slug": "chocolate-drizzle",
+    "type": "closeup",
+    "source": "assets/originals/chocolate-drizzle-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-99ec7201-85dd-4ce9-b0e9-cf5192fd791e.png"
+  },
+  {
+    "slug": "chilli-lime",
+    "type": "closeup",
+    "source": "assets/originals/chilli-lime-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-27f0d7eb-588f-415d-a256-7eba3c4ae4a7.png"
+  },
+  {
+    "slug": "truffle-parmesan",
+    "type": "closeup",
+    "source": "assets/originals/truffle-parmesan-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-4e8f2e9f-28d4-4cde-a3dc-60c774adde33.png"
+  },
+  {
+    "slug": "cinnamon-sugar",
+    "type": "closeup",
+    "source": "assets/originals/cinnamon-sugar-closeup.png",
+    "generatedSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-577fb2c2-5569-410f-9491-7845ab9713d9.png"
+  }
+]

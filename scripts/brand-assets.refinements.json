@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "original-butter-sea-salt",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: an original buttersalt Original Butter & Sea Salt pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the yellow pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact Original Butter & Sea Salt flavour label, front printed popcorn and outlines, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-33bbf9ff-cd0c-4e31-bde3-808ed5f6af78.png",
+    "beforeOriginal": "assets/originals/original-butter-sea-salt-bag-v1.png",
+    "selectedOriginal": "assets/originals/original-butter-sea-salt-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "sweet-salty",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Sweet & Salty pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Sweet & Salty' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-85c6ba01-133e-49a8-8619-a576cebb18aa.png",
+    "beforeOriginal": "assets/originals/sweet-salty-bag-v1.png",
+    "selectedOriginal": "assets/originals/sweet-salty-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "salted-caramel",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Salted Caramel pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Salted Caramel' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-709b5989-b543-488f-a308-f3f93a95341e.png",
+    "beforeOriginal": "assets/originals/salted-caramel-bag-v1.png",
+    "selectedOriginal": "assets/originals/salted-caramel-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "cheddar-cheese",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Cheddar Cheese pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Cheddar Cheese' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-e3575111-f293-4d46-9307-1a69ed93f5cf.png",
+    "beforeOriginal": "assets/originals/cheddar-cheese-bag-v1.png",
+    "selectedOriginal": "assets/originals/cheddar-cheese-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "chocolate-drizzle",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Chocolate Drizzle pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Chocolate Drizzle' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-57628c5d-de1d-48bc-b8c9-9ab4a06a646d.png",
+    "beforeOriginal": "assets/originals/chocolate-drizzle-bag-v1.png",
+    "selectedOriginal": "assets/originals/chocolate-drizzle-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "chilli-lime",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Chilli Lime pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Chilli Lime' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-68632851-07c5-4dcc-b9c7-2ffaaa722825.png",
+    "beforeOriginal": "assets/originals/chilli-lime-bag-v1.png",
+    "selectedOriginal": "assets/originals/chilli-lime-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "truffle-parmesan",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Truffle Parmesan pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Truffle Parmesan' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-38f2082c-e91e-401b-b1a1-2ff57e5df74d.png",
+    "beforeOriginal": "assets/originals/truffle-parmesan-bag-v1.png",
+    "selectedOriginal": "assets/originals/truffle-parmesan-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "cinnamon-sugar",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Cinnamon Sugar pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Cinnamon Sugar' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a13599-6a72-7e10-8815-a4d76896b67d\\exec-ab707f2f-ae01-4c99-9db5-3e0915cda5d9.png",
+    "beforeOriginal": "assets/originals/cinnamon-sugar-bag-v1.png",
+    "selectedOriginal": "assets/originals/cinnamon-sugar-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  }
+]

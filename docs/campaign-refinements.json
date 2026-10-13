@@ -1,0 +1,45 @@
+{
+  "created": "2026-10-14",
+  "refinementCount": 3,
+  "refinements": [
+    {
+      "key": "discovery-box-bag",
+      "prompt": "Edit this image to correct ALL packaging text, retaining beautiful photoreal lighting and placement exactly. Main box wordmark must be soft bold rounded lowercase 'buttersalt' and secondary 'the discovery box'. Inside lid ONLY 'little kernels. big feelings.' NO 'small batches' or manufacturing claims. Eight pouches exact top row from left: 'butter & sea salt', 'sweet & salty', 'salted caramel', 'cheddar cheese'; bottom row from left: 'chocolate drizzle', 'chilli lime', 'truffle parmesan', 'cinnamon sugar'. Each pouch large soft bold rounded lowercase 'buttersalt', small POPCORN. Accurate perfectly readable short labels, no other flavour names or claims. Preserve bag colours yellow blush orange cobalt burgundy moss lilac cinnamon rose. No extra small text on box sides; remove it and make side faces plain yellow. Concept product rendering.",
+      "mode": "built-in image_gen edit",
+      "selectedOriginal": "assets/originals/campaign/discovery-box-bag.png",
+      "exports": [
+        "public/images/discovery-box-bag.webp",
+        "public/images/discovery-box-bag-640.webp",
+        "public/images/discovery-box-bag-480.webp"
+      ],
+      "status": "Selected by root after packaging correction review.",
+      "conceptNotice": "Development concept visualisation; not a photograph of manufactured stock."
+    },
+    {
+      "key": "mixed-box-bag",
+      "prompt": "Edit this beautiful photoreal image to correct ALL product flavour labels while preserving composition and lighting exactly. Main box soft bold rounded lowercase 'buttersalt', secondary 'a little bit of everything'. Inside lid same secondary text allowed. Six bags exact back row left to right: yellow 'butter & sea salt', orange 'salted caramel', moss green 'chilli lime'; front row left to right: cobalt 'cheddar cheese', blush 'sweet & salty', burgundy 'chocolate drizzle'. Each large bold rounded lowercase 'buttersalt', small POPCORN and perfectly readable exact flavour. Remove 'classic butter','cheddar glow','herb garden','white cheddar','sweet kettle','dark chocolate', never invent flavour names. No unsupported claims. Concept packaging.",
+      "mode": "built-in image_gen edit",
+      "selectedOriginal": "assets/originals/campaign/mixed-box-bag.png",
+      "exports": [
+        "public/images/mixed-box-bag.webp",
+        "public/images/mixed-box-bag-640.webp",
+        "public/images/mixed-box-bag-480.webp"
+      ],
+      "status": "Selected by root after packaging correction review.",
+      "conceptNotice": "Development concept visualisation; not a photograph of manufactured stock."
+    },
+    {
+      "key": "gift-box-bag",
+      "prompt": "Edit this photoreal gift image to standardise all lettering to large soft bold rounded lowercase 'buttersalt' (same wordmark as yellow popcorn campaign pouch), and on three pouches ensure exact readable flavour names: yellow 'butter & sea salt', orange 'salted caramel', blush 'sweet & salty', each small 'POPCORN' beneath brand. Boxes secondary 'good things inside' may remain. No unsupported claims or weights. Preserve natural lighting, composition, colours and ribbon. Concept packaging.",
+      "mode": "built-in image_gen edit",
+      "selectedOriginal": "assets/originals/campaign/gift-box-bag.png",
+      "exports": [
+        "public/images/gift-box-bag.webp",
+        "public/images/gift-box-bag-640.webp",
+        "public/images/gift-box-bag-480.webp"
+      ],
+      "status": "Selected by root after packaging correction review.",
+      "conceptNotice": "Development concept visualisation; not a photograph of manufactured stock."
+    }
+  ]
+}

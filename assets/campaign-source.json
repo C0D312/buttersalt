@@ -1,0 +1,26 @@
+[
+  {
+    "key": "hero",
+    "path": "assets/originals/campaign/hero.png"
+  },
+  {
+    "key": "family",
+    "path": "assets/originals/campaign/family.png"
+  },
+  {
+    "key": "discovery-box-bag",
+    "path": "assets/originals/campaign/discovery-box-bag.png"
+  },
+  {
+    "key": "mixed-box-bag",
+    "path": "assets/originals/campaign/mixed-box-bag.png"
+  },
+  {
+    "key": "gift-box-bag",
+    "path": "assets/originals/campaign/gift-box-bag.png"
+  },
+  {
+    "key": "lifestyle",
+    "path": "assets/originals/campaign/lifestyle.png"
+  }
+]

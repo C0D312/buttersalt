@@ -1,0 +1,320 @@
+{
+  "created": "2026-10-14",
+  "flavourAssetCount": 16,
+  "prompts": [
+    {
+      "slug": "original-butter-sea-salt",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: warm butter yellow #F6CD45. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Original Butter & Sea Salt' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of crisp golden popped corn with natural butter sheen and very delicate sea salt at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Original Butter & Sea Salt'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/original-butter-sea-salt-bag.png",
+      "exports": [
+        "public/images/original-butter-sea-salt-bag.webp",
+        "public/images/original-butter-sea-salt-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "sweet-salty",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: soft dusty blush #EAA7AB. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Sweet & Salty' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of airy ivory popcorn with delicate sugar crystal sparkle and a little sea salt at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Sweet & Salty'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/sweet-salty-bag.png",
+      "exports": [
+        "public/images/sweet-salty-bag.webp",
+        "public/images/sweet-salty-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "salted-caramel",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: burnt caramel orange #C75B2E. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Salted Caramel' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of deep amber caramel-glazed popcorn, thin glossy shell and tiny salt crystals at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Salted Caramel'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/salted-caramel-bag.png",
+      "exports": [
+        "public/images/salted-caramel-bag.webp",
+        "public/images/salted-caramel-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "cheddar-cheese",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: rich cobalt blue #3250B6. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Cheddar Cheese' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of golden orange cheddar seasoning coating crisp popped corn at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Cheddar Cheese'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/cheddar-cheese-bag.png",
+      "exports": [
+        "public/images/cheddar-cheese-bag.webp",
+        "public/images/cheddar-cheese-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "chocolate-drizzle",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: rich burgundy #752C3D. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Chocolate Drizzle' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of ivory popcorn drizzled with thin dark chocolate ribbons at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Chocolate Drizzle'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/chocolate-drizzle-bag.png",
+      "exports": [
+        "public/images/chocolate-drizzle-bag.webp",
+        "public/images/chocolate-drizzle-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "chilli-lime",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: moss green #667D43. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Chilli Lime' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of golden popcorn lightly dusted with red chilli seasoning and visible green lime zest at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Chilli Lime'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/chilli-lime-bag.png",
+      "exports": [
+        "public/images/chilli-lime-bag.webp",
+        "public/images/chilli-lime-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "truffle-parmesan",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: muted lilac #B5A4C8. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Truffle Parmesan' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of pale butter popcorn with fine pale parmesan flecks and understated dark seasoning specks at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Truffle Parmesan'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/truffle-parmesan-bag.png",
+      "exports": [
+        "public/images/truffle-parmesan-bag.webp",
+        "public/images/truffle-parmesan-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "cinnamon-sugar",
+      "type": "bag",
+      "prompt": "Use case: product-mockup. Asset type: premium popcorn ecommerce product photography, square format. Primary request: exactly one upright photorealistic matte gusset popcorn pouch for the original contemporary food brand buttersalt, full pouch visible, three-quarter frontal camera, consistent medium-width 3:4 bag proportions and flat sealed crimped top. Scene: warm cream #FAF7EF seamless tabletop and background with soft natural shadow. Pouch colour: warm rose #C47F74. Label artwork: a small original compact lowercase b seed/flower symbol centered near top, a very large bold softly rounded geometric lowercase wordmark 'buttersalt' in dark ink #26251E centered across upper half, then small uppercase 'POPCORN', then clearly readable 'Cinnamon Sugar' on lower third in dark ink. Spell brand exactly b-u-t-t-e-r-s-a-l-t. Use restrained contemporary typography and a few thin abstract popcorn outline accents. Lighting: consistent soft studio light from top left, natural rich material texture, elegant appetising premium food campaign. Composition: bag occupies roughly 73% of image height centered; generous cream margins, 1:1 square. A small scattering of golden popcorn lightly dusted in cinnamon and sparkling fine sugar at the base to demonstrate flavour. Accurate legible packaging text is essential. Text only 'buttersalt', 'POPCORN', 'Cinnamon Sugar'. Avoid extra labels, weights, nutrition, ingredients, dietary claims, country claims, badges, watermarks, extra bags. Development packaging concept, physically plausible.",
+      "original": "assets/originals/cinnamon-sugar-bag.png",
+      "exports": [
+        "public/images/cinnamon-sugar-bag.webp",
+        "public/images/cinnamon-sugar-bag-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "original-butter-sea-salt",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of crisp golden popped corn with natural butter sheen and very delicate sea salt, flavour concept 'Original Butter & Sea Salt' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted warm butter yellow #F6CD45. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/original-butter-sea-salt-closeup.png",
+      "exports": [
+        "public/images/original-butter-sea-salt-closeup.webp",
+        "public/images/original-butter-sea-salt-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "sweet-salty",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of airy ivory popcorn with delicate sugar crystal sparkle and a little sea salt, flavour concept 'Sweet & Salty' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted soft dusty blush #EAA7AB. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/sweet-salty-closeup.png",
+      "exports": [
+        "public/images/sweet-salty-closeup.webp",
+        "public/images/sweet-salty-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "salted-caramel",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of deep amber caramel-glazed popcorn, thin glossy shell and tiny salt crystals, flavour concept 'Salted Caramel' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted burnt caramel orange #C75B2E. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/salted-caramel-closeup.png",
+      "exports": [
+        "public/images/salted-caramel-closeup.webp",
+        "public/images/salted-caramel-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "cheddar-cheese",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of golden orange cheddar seasoning coating crisp popped corn, flavour concept 'Cheddar Cheese' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted rich cobalt blue #3250B6. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/cheddar-cheese-closeup.png",
+      "exports": [
+        "public/images/cheddar-cheese-closeup.webp",
+        "public/images/cheddar-cheese-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "chocolate-drizzle",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of ivory popcorn drizzled with thin dark chocolate ribbons, flavour concept 'Chocolate Drizzle' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted rich burgundy #752C3D. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/chocolate-drizzle-closeup.png",
+      "exports": [
+        "public/images/chocolate-drizzle-closeup.webp",
+        "public/images/chocolate-drizzle-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "chilli-lime",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of golden popcorn lightly dusted with red chilli seasoning and visible green lime zest, flavour concept 'Chilli Lime' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted moss green #667D43. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/chilli-lime-closeup.png",
+      "exports": [
+        "public/images/chilli-lime-closeup.webp",
+        "public/images/chilli-lime-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "truffle-parmesan",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of pale butter popcorn with fine pale parmesan flecks and understated dark seasoning specks, flavour concept 'Truffle Parmesan' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted muted lilac #B5A4C8. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/truffle-parmesan-closeup.png",
+      "exports": [
+        "public/images/truffle-parmesan-closeup.webp",
+        "public/images/truffle-parmesan-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    },
+    {
+      "slug": "cinnamon-sugar",
+      "type": "closeup",
+      "prompt": "Use case: photorealistic-natural. Asset type: square premium popcorn ecommerce flavour close-up. Primary request: beautiful macro food photography of golden popcorn lightly dusted in cinnamon and sparkling fine sugar, flavour concept 'Cinnamon Sugar' for buttersalt. Scene: an appetising organic mound of popped corn on warm cream #FAF7EF matte surface with a soft out-of-focus backdrop gently tinted warm rose #C47F74. Photographic direction: studio daylight from upper left, shallow depth of field, hero kernels tack sharp in foreground, crisp corn folds, believable delicate coating, irregular natural shapes, natural highlights, premium contemporary editorial food photography, warm but accurate colour. Composition square 1:1 with kernels filling the middle 75%, slight negative cream space at edges. No packaging, logo, text, letters, people, hands, claims, watermarks, cutlery or objects unrelated to this flavour. High detail, realistic food texture, not plastic, not exaggerated thick coating.",
+      "original": "assets/originals/cinnamon-sugar-closeup.png",
+      "exports": [
+        "public/images/cinnamon-sugar-closeup.webp",
+        "public/images/cinnamon-sugar-closeup-480.webp"
+      ],
+      "generation": "built-in image_gen",
+      "status": "generated, visually inspected",
+      "notes": "Development concept visualisation; not manufactured-stock photography."
+    }
+  ],
+  "refinements": [
+  {
+    "slug": "original-butter-sea-salt",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: an original buttersalt Original Butter & Sea Salt pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the yellow pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact Original Butter & Sea Salt flavour label, front printed popcorn and outlines, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/original-butter-sea-salt-bag-v1.png",
+    "selectedOriginal": "assets/originals/original-butter-sea-salt-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "sweet-salty",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Sweet & Salty pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Sweet & Salty' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/sweet-salty-bag-v1.png",
+    "selectedOriginal": "assets/originals/sweet-salty-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "salted-caramel",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Salted Caramel pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Salted Caramel' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/salted-caramel-bag-v1.png",
+    "selectedOriginal": "assets/originals/salted-caramel-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "cheddar-cheese",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Cheddar Cheese pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Cheddar Cheese' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/cheddar-cheese-bag-v1.png",
+    "selectedOriginal": "assets/originals/cheddar-cheese-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "chocolate-drizzle",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Chocolate Drizzle pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Chocolate Drizzle' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/chocolate-drizzle-bag-v1.png",
+    "selectedOriginal": "assets/originals/chocolate-drizzle-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "chilli-lime",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Chilli Lime pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Chilli Lime' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/chilli-lime-bag-v1.png",
+    "selectedOriginal": "assets/originals/chilli-lime-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "truffle-parmesan",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Truffle Parmesan pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Truffle Parmesan' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/truffle-parmesan-bag-v1.png",
+    "selectedOriginal": "assets/originals/truffle-parmesan-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  },
+  {
+    "slug": "cinnamon-sugar",
+    "type": "bag",
+    "prompt": "Use case: precise-object-edit. Edit target is first image: original buttersalt Cinnamon Sugar pouch photo. Second image is the approved custom wordmark reference. Third is the approved seed-b compact mark reference. Replace ONLY the generated pouch brand lettering and compact b mark with the precise reference artwork from images two and three: faithfully reproduce their exact custom softly rounded letterforms and single leaf-b silhouette, dark ink #26251E print. The new wordmark must be large, lower-case 'buttersalt', centred in the same existing area. Brand mark should be small above it in the same existing location. Keep absolutely unchanged the pouch colour, real material wrinkles, gusset shape, top seal, POPCORN text, exact 'Cinnamon Sugar' flavour label, front printed popcorn and outlines if any, foreground kernels, creamy background, shadow, camera and framing. Maintain crisp legible label text and realistic print following existing surface slightly. No other text, claims, objects or changes. This is production branding consistency refinement of a development concept.",
+    "beforeOriginal": "assets/originals/cinnamon-sugar-bag-v1.png",
+    "selectedOriginal": "assets/originals/cinnamon-sugar-bag-approved.png",
+    "references": [
+      "public/brand/wordmark-dark.png",
+      "public/brand/mark-dark.png"
+    ],
+    "status": "selected after individual full-resolution visual inspection",
+    "generation": "built-in image_gen edit"
+  }
+]
+}

@@ -1,0 +1,7 @@
+import {getCatalogue} from '@/lib/catalogue-server';
+import {ProductCard} from '@/components/product-card';
+import Image from 'next/image';
+import Link from 'next/link';
+import {Icon} from '@/components/icons';
+export const metadata={title:'Discovery boxes & bundles',description:'Meet the whole popcorn flavour family with a buttersalt discovery box, mixed box or gift.',alternates:{canonical:'/bundles'}};
+export default async function Page(){const{products}=await getCatalogue();return <><section className="page-intro"><span className="eyebrow">BETTER TOGETHER</span><h1>Boxfuls of<br/><em>good feeling.</em></h1><p>Discover your favourites. Share something delicious.<br/>Or keep a little of everything.</p></section><section className="section"><h2 className="sr-only">Discovery boxes and bundles</h2><div className="product-grid three">{products.filter(p=>p.isBundle).map(p=><ProductCard key={p.id} product={p}/>)}</div></section><section className="editorial light"><div className="editorial-image"><Image src="/images/family.webp" fill sizes="(max-width: 768px) 100vw, 50vw" alt="The full buttersalt flavour family concept packaging"/></div><div className="editorial-copy"><span className="eyebrow">A LITTLE BIT OF YOU</span><h2>A box with<br/><em>personality.</em></h2><p>You bring the taste. We bring the choice. Choose six bags for your own happy little collection.</p><Link href="/build-a-box" className="button">Build your box<Icon name="arrow"/></Link></div></section></>;}
